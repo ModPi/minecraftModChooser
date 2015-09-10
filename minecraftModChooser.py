@@ -136,10 +136,10 @@ while True:
   if key == '<F11>':
     print "F11 pressed"
     if minecraftWindow is True:
-      os.system("su pi -c '/home/pi/toggleBlockly.sh'")
+      os.system("su pi -c '/home/pi/configScripts/toggleBlockly.sh'")
       minecraftWindow = False
     else:
-      os.system("su pi -c '/home/pi/toggleMinecraft.sh'")
+      os.system("su pi -c '/home/pi/configScripts/toggleMinecraft.sh'")
       minecraftWindow = True
 
 

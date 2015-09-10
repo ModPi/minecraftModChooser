@@ -1,0 +1,11 @@
+Filename: mcmonitor.c
+Author: Joseph d'Eon
+Description:
+  A daemon that watches for minecraft-pi to be run. When it is run, it loads 
+  the minecraftModChooser (see its functionality in minecraftModChooser README
+  in /home/pi/ModChooser). When minecraft is no longer running. This daemon
+  makes sure the modChooser is no longer running as well.
+
+Usage:
+  This daemon will run on boot. If killed, run with sudo ./mcmonitor. If
+  changed: gcc -o mcmonitor mcmonitor.c to compile, then run.
