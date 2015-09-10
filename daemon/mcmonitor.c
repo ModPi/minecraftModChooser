@@ -66,7 +66,7 @@ int main(){
 
   while(1){
     //daemon code here
-    fp = popen("ps -elaf | grep minecraftModChooser | grep -v grep", "r");//mod chooser running
+    fp = popen("ps -elaf | grep 'minecraftModChooser.py' | grep -v grep", "r");//mod chooser running
     fpMC = popen("ps -elaf | grep minecraft-pi | grep -v bin | grep -v grep", "r");//minecraft running
 
     //begin check for minecraft pi running
