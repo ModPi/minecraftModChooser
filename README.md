@@ -1,1 +1,4 @@
 # minecraftModChooser
+minecraftModChooser is an interactive layer for modding minecraft-pi. The user's pi boots directly into fullscreen minecraft and will show an initial message telling them how to use the interactive modding layer. They will see any mods they have made listed next to which button to press to run that mod(F1 - F9). They are also instructed to use 'r' to relist their mods, 'm' to show the menu of commands, and 'q' to quit all mods that are running(note, not all mods run continuously, but ones that are designed to run continuously can be stopped using 'q').
+
+minecraftModChooser is a python script that runs continuously in the background whenever minecraft pi itself is running(determined by a daemon that is launched at startup, see the daemon subdirectory within this repo).
